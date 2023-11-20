@@ -11,8 +11,6 @@ function RandomColor() {
         setcolor(colors[randomIndex]);
     }
 
-
-
   return (
 
     <>
@@ -20,7 +18,6 @@ function RandomColor() {
         <div style={{backgroundColor: color, width:200, height:200}}></div>
     </>
 
-    
   )
 }
 

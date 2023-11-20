@@ -10,16 +10,10 @@ function RandomNumber() {
         setNumber(randomNumber);
         const li = document.createElement('li');
         li.innerHTML= randomNumber;
-        
-
+      
         ul.appendChild(li);
 
-
     }
-
-    
-
-    
 
   return (
   <>
