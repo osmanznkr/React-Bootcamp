@@ -10,12 +10,21 @@ import RandomNumber from './state/RandomNumber';
 import RandomColor from './state/RandomColor';
 import RemoveRandom from './state/RemoveRandom';
 import ProductsState from './state/ProductsState';
+import HomePage from './effect/products/HomePage';
+import Details from './effect/products/Details';
 
 
 
 function App() {
   return (
-   <ProductsState></ProductsState>
+   <>  
+    <Routes>
+      <Route path="/" element={<HomePage></HomePage>}></Route>
+      <Route path="/products/:id" element={<Details/>}></Route>
+    </Routes>
+
+    <Link to='/'>Back</Link>
+   </>
     
   );
 }
