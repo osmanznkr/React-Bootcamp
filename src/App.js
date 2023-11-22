@@ -12,18 +12,21 @@ import RemoveRandom from './state/RemoveRandom';
 import ProductsState from './state/ProductsState';
 import HomePage from './effect/products/HomePage';
 import Details from './effect/products/Details';
+import Example from './effect/effectExample/Example';
 
 
 
 function App() {
   return (
    <>  
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<HomePage></HomePage>}></Route>
       <Route path="/products/:id" element={<Details/>}></Route>
     </Routes>
 
-    <Link to='/'>Back</Link>
+    <Link to='/'>Back</Link> */}
+
+    <Example></Example>
    </>
     
   );
